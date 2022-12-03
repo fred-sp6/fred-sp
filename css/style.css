@@ -1,0 +1,343 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins',sans-serif;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	background: #080808;
+	color: #fff;
+}
+#header{
+	width: 100%;
+	height: 100vh;
+	background-image: url(image/blue.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.container{
+	padding:10px 10%;
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.fa-sharp fa-solid fa-user-secret{
+	width: 140px;
+}
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+nav ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	position: relative;
+}
+nav ul li a::after{
+	content: '';
+	width: 0%;
+	height: 3px;
+	background: blue;
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	transition: 0.5s;
+}
+nav ul li a:hover::after{
+	width: 100%;
+}
+.header{
+	color: blue;
+}
+.header-text{
+	margin-top: 20%;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+}
+.header-text h1{
+	font-size: 60px;
+	margin: 20px;
+}
+.header-text h1 span{
+	color: blue;
+}
+/*-----------about-----------*/
+#about me{
+	padding: 80px 0;
+	color: #ababab;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.about-col-1{
+	flex-basis: 35%;
+}
+.about-col-1 img{
+	width: 100%;
+	border-radius: 15px;
+}
+.about-col-2{
+	flex-basis: 60%;	
+}
+.sub-title{
+	font-size: 70px;
+	font-weight: 700;
+	color: #fff;
+}
+.paragraph{
+	font-size: 20px;
+}
+.shct{
+	display: block;
+	margin: 50px auto;
+	width: fit-content;
+	border: 1px solid blue;
+	padding: 14px 50px;
+	border-radius: 6px;
+	text-decoration: none;
+	color: #fff;
+	transition: background 0.5s;
+}
+.shct:hover{
+	background: blue;
+}
+/*-----------hobbies-----------*/
+#hobbies{
+	padiing: 30px 0;
+}
+.hobbies-list{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 40px;
+	margin-top: 50px;
+	text-align: center;
+}
+.hob1{
+	padding: 40px;
+	font-size: 13px;
+	font-weight: 300;
+	border-radius: 10px;
+	transition: background 0.5s, transform 0.5s;
+}
+.hobbies-list div{
+	padding: 40px;
+	font-size: 13px;
+	font-weight: 300;
+	border-radius: 10px;
+	transition: background 0.5s, transform 0.5s;
+}
+.hob1{
+	background: url(image/chess.jpg);
+}
+.hob2{
+	background: url(image/bike.jpg);
+}
+.hob3{
+	background: url(image/game.jpg);
+}
+.hobbies-list div i{
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+.hobbies-list div h2{
+	font-size: 30px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.hobbies-list div a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 12px;
+	margin-top: 20px;
+	display: inline-block;
+}
+.hobbies-list div a{
+	display: block;
+	margin: 50px auto;
+	width: fit-content;
+	border: 1px solid #262626;
+	padding: 14px 50px;
+	border-radius: 6px;
+	text-decoration: none;
+	color: #fff;
+	transition: background 0.5s;;
+}
+.hobbies-list div:hover{
+	background: blue;
+	transform: translateY(-10px);
+}
+/*-----------favorites-----------*/
+#favorites{
+	padding: 50px 0;
+}
+.favorites-list{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 40px;
+	margin-top: 50px;
+}
+.favorites1{
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.favorites1 img{
+	width: 100%;
+	border-radius: 10px;
+	display: block;
+	transition: transform 0.5s;
+}
+.favorites2{
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.favorites2 img{
+	width: 100%;
+	border-radius: 10px;
+	display: block;
+	transition: transform 0.5s;
+}
+.favorites3{
+	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+.favorites3 img{
+	width: 100%;
+	border-radius: 10px;
+	display: block;
+	transition: transform 0.5s;
+}
+.layer{
+	width: 100%;
+	height: 0%;
+	background: linear-gradient(rgba(0,0,0,0.6), blue);
+	border-radius: 10px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 40px;
+	text-align: center;
+	font-size: 14px;
+	transition: height 0.5s;
+}
+.layer h3{
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.layer a{
+	margin-top: 20px;
+	color: blue;
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 60px;
+	background: #fff;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	text-align: center;
+}
+.favorites1:hover img{
+	transform: scale(1.1);
+}
+.favorites2:hover img{
+	transform: scale(1.1);
+}
+.favorites3:hover img{
+	transform: scale(1.1);
+}
+.favorites1:hover .layer{
+	height: 100%;
+}
+.favorites2:hover .layer{
+	height: 100%;
+}
+.favorites3:hover .layer{
+	height: 100%;
+}
+.btn{
+	display: block;
+	margin: 50px auto;
+	width: fit-content;
+	border: 1px solid blue;
+	padding: 14px 50px;
+	border-radius: 6px;
+	text-decoration: none;
+	color: #fff;
+	transition: background 0.5s;
+}
+.btn:hover{
+	background: blue;
+}
+/* ---------css for small screens--------- */
+nav .fas{
+	display: none;
+}
+
+@media only screen and (max-width: 600px){
+	#header{
+		background-image: url(image/blue.jpg);
+	}
+	.header-text{
+		margin-top: 100%;
+		font-size: 16px;
+	}
+	.header-text h1{
+		font-size: 30px;
+	}
+	nav .fas{
+		display: block;
+		font-size: 25px;
+	}
+	nav ul{
+		background: #1520a6;
+		position: fixed;
+		top: 0;
+		right: -200px;
+		width: 200px;
+		height: 100vh;
+		padding-top: 50px;
+		z-index: 2;
+		transition: 0.5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 25px;
+	}
+	nav ul .fas{
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		cursor: pointer;
+	}
+	.sub-title{
+		font-size: 40px;
+	}
+	.about-col-1, .about-col-2{
+		flex-basis: 100%;
+	}
+	.about-col-1{
+		margin-bottom: 30px;
+	}
+	.about-col-2{
+		font-size: 14px;
+		text-align: center;
+	}
+}

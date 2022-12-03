@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Portfolio Website</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://kit.fontawesome.com/1851f105fc.js" crossorigin="anonymous"></script>
+</head>	
+<body>
+<div id="header">
+    <div class="container">
+	    <nav>
+		   <i class="fa-sharp fa-solid fa-user-secret"></i>
+		   <ul id="sidemenu">
+		       <li><a href="#header"><b>Home</b></a></li>
+		       <li><a href="#about"><b>About</b></a></li>
+			   <li><a href="#hobbies"><b>Hobbies</b></a></li>
+			   <li><a href="#favorites"><b>Favorites</b></a></li>
+			   <i class="fas fa-times" onclick="closemenu()"></i>
+		   </ul>
+		   <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+		<div class="header-text">
+		    <p>Bachelor of Scince in Information Techology</p>
+			<h1>Hi, I'm <span>Fred</span> Perialde From <br>ICCT Colleges</br></h1>
+		</div>
+	</div>
+</div>
+<!----------about---------->
+<div id="about">
+    <div class="container">
+	    <div class="row">
+		    <div class="about-col-1">
+			    <img src="image/about.jpg">
+			</div>
+			<div class="about-col-2">
+			    <h1 class="sub-title">About Me</h1>
+				<p class="paragraph">I'm Fred Perialde, 20yrs old. I study in ICCT and my course is BSIT. I live in Antipolo City. My height is 5'9 and my weight is 55kg. I am an athlete in sepak takraw, my position is spiker. I want to achieve my goal became an fireman and a bussiness man.</p>			
+			</div>
+		</div>
+		<a href="#" class="shct">Home</a>
+	</div>
+</div>	
+<!----------hobbies---------->
+<div id="hobbies">
+	<div class="container">
+		<h1 class="sub-title">My Hobbies</h1>
+		<div class="hobbies-list">			 
+			<div class="hob1">
+				<i class="fa-solid fa-chess"></i>
+				<h2>Chess</h2>
+				<p>- Because it can help to deepen my focus and also improves my memory.</p>
+				<a href="#">Learn more</a>
+			</div>
+			<div class="hob2">
+				<i class="fa-solid fa-bicycle"></i>
+				<h2>Cycling</h2>
+				<p>- Because it strengthened my bones.</p>
+				<a href="#">Learn more</a>
+			</div>
+			<div class="hob3">
+				<i class="fa-solid fa-gamepad"></i>
+				<h2>Playing Online Games</h2>
+				<p>- Because its my bonding with my friends.</p>
+				<a href="#">Learn more</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!----------favorites---------->
+<div id="favorites">
+	<div class="container">
+		<h1 class="sub-title">My Favorites</h1>
+		<div class="favorites-list">
+			<div class="favorites1">
+				<img src="image/bicolexpress1.jpg">
+				<div class="layer">
+					<h3><b>Food: Bicol Express</b></h3>
+					<p>- Bicol Express because it's delicious and spicy.</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="favorites2">
+				<img src="image/sepak.jpg">
+				<div class="layer">
+					<h3><b>Sport: Sepak Takraw</b></h3>
+					<p>- Sepak Takraw, since elementary until now I am an athlete of sepak.</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+			<div class="favorites3">
+				<img src="image/cat1.jpg">
+				<div class="layer">
+					<h3><b>Pet: Cat</b></h3>
+					<p>- My pet in my house are cats, they're adorable and make me so happy.</p>
+					<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+				</div>
+			</div>
+		</div>
+		<a href="#" class="btn">Home</a>
+	</div>
+</div>
+
+
+<script>
+	
+	var sidemenu = document.getElementById("sidemenu");
+	
+	function openmenu(){
+		sidemenu.style.right = "0";
+	}
+	function closemenu(){
+		sidemenu.style.right = "-200px";
+	}
+	
+</script>
+
+</body>
+</html>		 
